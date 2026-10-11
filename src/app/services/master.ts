@@ -4,7 +4,7 @@ import { Observable } from 'rxjs/internal/Observable';
 
 @Service()
 export class Master {
-    apiURI: string = 'https://api.freeprojectapi.com/api'
+    apiURI: string = 'https://api.freeprojectapi.com/api/BusBooking/'
     private http = inject(HttpClient);
 
     getLocations(): Observable<any[]> {

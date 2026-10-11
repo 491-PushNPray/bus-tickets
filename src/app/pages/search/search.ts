@@ -19,5 +19,5 @@ export class Search implements OnInit {
 
   getAllLocations() {
     this.location$ = this.masterSrv.getLocations();
-}
+  }
 }

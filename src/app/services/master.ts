@@ -11,6 +11,9 @@ export class Master {
         return this.http.get<any[]>(this.apiURI + "GetBusLocations");
     }
 
+    searchBus(from: number, to:number, travelDate: string): Observable<any[]> {
+        return this.http.get<any[]>(`${this.apiURI}searchBus?fromLocation=${from}&toLocation=${to}&travelDate=${travelDate}`);
+    }
 
 
 }
